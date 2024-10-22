@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Game of Life</h1>
+    <label>Width: <input id="widthInput" type="number" value="100" /></label>
+    <label>Height: <input id="heightInput" type="number" value="100" /></label>
+    <button id="generateBtn">Generate</button>
+    <button id="randomBtn">Randomize</button>
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+
+    <label
+      >Update Interval (ms):
+      <input id="intervalInput" type="number" value="100"
+    /></label>
+    <button id="setIntervalBtn">Set Interval</button>
+
+    <p>Generation: <span id="generationCount">0</span></p>
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="game.js"></script>
+  </body>
+</html>
